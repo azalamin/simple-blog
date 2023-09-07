@@ -11,8 +11,6 @@ const Home = () => {
     }, [dispatch])
 
     const posts = useSelector(state => state.post.posts)
-    console.log(posts)
-
 
     return (
         <Box marginX={10} marginY={6} >
