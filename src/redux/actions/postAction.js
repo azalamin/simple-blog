@@ -5,9 +5,8 @@ export const loadPost = (data) => ({
     payload: data
 })
 
-export const addPost = (post) => ({
+export const addPost = () => ({
     type: ADD_POST,
-    payload: post,
 });
 
 export const removePost = (id) => ({

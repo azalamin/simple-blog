@@ -18,8 +18,8 @@ const Home = () => {
                 Latest Post
             </Typography>
             <Grid container gap={2}>
-                {posts.map(post => <Grid item md={3.8} justifyContent='center' >
-                    <PostCard key={post._id} post={post} />
+                {posts.map(post => <Grid key={post._id} item md={3.8} justifyContent='center' >
+                    <PostCard post={post} />
                 </Grid>)}
             </Grid>
         </Box>

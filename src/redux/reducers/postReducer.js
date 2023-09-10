@@ -1,4 +1,4 @@
-import { DELETE_POST, LOAD_POST } from '../actionTypes/actionTypes';
+import { ADD_POST, DELETE_POST, LOAD_POST } from '../actionTypes/actionTypes';
 
 const initialState = {
     posts: [],
@@ -10,6 +10,10 @@ const postReducer = (state = initialState, action) => {
             return {
                 ...state,
                 posts: action.payload,
+            };
+        case ADD_POST:
+            return {
+                ...state,
             };
         case DELETE_POST:
             return {
